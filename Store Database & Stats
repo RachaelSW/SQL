@@ -1,0 +1,16 @@
+--Create a grocery store database
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO clothes VALUES(1, "shirts", 10, 13);
+INSERT INTO clothes VALUES(2, "trousers", 15, 16);
+INSERT INTO clothes VALUES(3, "skirts", 5, 11);
+INSERT INTO clothes VALUES(4, "jackets", 4, 21);
+INSERT INTO clothes VALUES(5, "hats", 7, 18);
+
+--display the database ordered by price. 
+SELECT * FROM clothes 
+ORDER BY price desc;
+
+--display items in the database with a price higher than 14?
+SELECT * FROM clothes 
+WHERE price > 14 ORDER BY price;
